@@ -1,0 +1,28 @@
+.mentor-profile {
+  width: 70%;
+  margin: 30px auto;
+
+  span {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    &__profession {
+      color: $accent3Color;
+      font-size: 14px;
+    }
+  }
+
+  &__rating {
+    margin: 30px 0;
+    font-size: 16px;
+  }
+}

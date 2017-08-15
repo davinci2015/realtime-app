@@ -1,0 +1,13 @@
+html, body {
+    min-height: 100%;
+}
+
+.manager {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.manager > label {
+    display: block;
+}

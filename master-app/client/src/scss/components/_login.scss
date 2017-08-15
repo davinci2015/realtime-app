@@ -1,0 +1,25 @@
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__heading {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    width: 40%;
+  }
+
+  &__buttons {
+    padding-top: 30px;
+  }
+
+  &__input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

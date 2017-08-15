@@ -1,0 +1,10 @@
+.ratings {
+  &__star-wrapper {
+    border-bottom: 1px solid rgba($accent3Color, 0.2);
+    padding: 20px 0;
+    > label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WebSocket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col s6 m8 l8">
+            <div class="col s12 m6">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content article">
+                            <p data-article-name="Jabuka">Jabuka</p>
+                            <span data-article-price="3.99">3,99kn</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Dodaj u košaricu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content article">
+                            <p data-article-name="Kruh">Kruh</p>
+                            <span data-article-price="6.99">6,99kn</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Dodaj u košaricu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content article">
+                            <p data-article-name="Sok">Sok</p>
+                            <span data-article-price="11.99">11,99kn</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Dodaj u košaricu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content article">
+                            <p data-article-name="Šalica">Šalica</p>
+                            <span data-article-price="22.99">22,99kn</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Dodaj u košaricu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s6 m4 l4">
+            <div class="card horizonal basket">
+                <div class="card-content">
+                    <span class="basket__heading">Košarica</span>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Proizvod</th>
+                            <th>Cijena</th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="basket__table">
+                        </tbody>
+                    </table>
+                    <span class="basket__sum">Nema proizvoda u košarici</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Server-sent events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="manager center-align">
+        <label>Connection</label>
+        <a class="waves-effect waves-light btn" id="btnSubscribe">Open</a>
+        <a class="waves-effect waves-light btn disabled red" id="btnClose">Close</a>
+    </div>
+
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Change</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="item">
+            <td data-name="bitcoin">Bitcoin</td>
+            <td class="item__price">0,00</td>
+            <td class="item__change">0,00</td>
+        </tr>
+        <tr class="item">
+            <td data-name="ethereum">Ethereum</td>
+            <td class="item__price">0,00</td>
+            <td class="item__change">0,00</td>
+        </tr>
+        <tr class="item">
+            <td data-name="ripple">Ripple</td>
+            <td class="item__price">0,00</td>
+            <td class="item__change">0,00</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.panel {
+  position: relative;
+  background: $accent2Color;
+
+  #panel-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &__chip {
+    position: fixed !important;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__call-end {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+
+  &__video {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    height: 100px;
+    width: 200px;
+  }
+
+  canvas {
+    cursor: crosshair;
+    border: 3px solid rgba($accent3Color, 0.4);
+  }
+}
