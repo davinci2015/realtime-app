@@ -35,7 +35,7 @@ class Panel extends Component {
     }
 
     componentDidMount() {
-        this.video = this.refs.audio;
+        this.video = this.refs.video;
         this._canvas = new Canvas(this.refs.panel);
         this._canvas.setCanvasSize(config.panel.width, config.panel.height);
         this._attachEvents();
@@ -264,7 +264,7 @@ class Panel extends Component {
                     onTouchTap={() => this._hangUp()}
                     icon={<CallEndIcon/>}/>
                 <canvas ref="panel"></canvas>
-                <video className="panel__video" ref="video" autoplay></video>
+                <video className="panel__video" ref="video" autoPlay></video>
                 <div id="panel-center"></div>
             </div>
         );

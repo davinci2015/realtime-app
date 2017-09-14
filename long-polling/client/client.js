@@ -9,13 +9,14 @@ function subscribe() {
 			updateText(data.message);
 		},
 		complete: function () {
+			console.log("subscribe");
 			subscribe();
 		}
 	});
 }
 
-function publish() {
-	let data = JSON.stringify({ "message": "Hello to all clients " + new Date().getSeconds() });
+function publish(message) {
+	let data = JSON.stringify({ message });
 	$.ajax({
 		type: "POST",
         crossDomain: true,
@@ -30,13 +31,17 @@ function updateText(message) {
     $("#message").html(message);
 }
 
+function getMessage() {
+	return $('#input').val();
+}
+
 $(document).ready(function () {
 	$("#btnSubscribe").click(function () {
-		subscribe();
 		updateText("You're subscribed");
+		subscribe();
     });
 
 	$("#btnPush").click(function () {
-		publish();
+		publish(getMessage());
 	});
 });

@@ -16,6 +16,7 @@ class AuthController {
     constructor(subjectObserver) {
         this._subjectObserver = subjectObserver;
         this.getUserFromToken = this.getUserFromToken.bind(this);
+        this.register = this.register.bind(this);
         this.login = this.login.bind(this);
         this.logout = this.logout.bind(this);
     }
@@ -64,7 +65,10 @@ class AuthController {
                 user = this._prepareUser(user);
                 res.status(httpStatusCodes.OK).send(user);
             })
-            .catch(error => next(error));
+            .catch(error => {
+                console.log(error)
+                next(error)
+            });
     }
 
     login(req, res, next) {
